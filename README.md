@@ -2,7 +2,7 @@
 
 Execution
 
-```
+```console
 ./bin/spark-submit \
 --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.3 \
 --jars /usr/hdp/current/spark-client/lib/datanucleus-api-jdo-3.2.6.jar, \
@@ -13,7 +13,7 @@ kafkaConsumer.py master:2181 test
 
 Input Log Format
 
-```
+```text
 {"data": {"CH_22": 93, "CH_39": 5, "CH_48": 81, "CH_67": 33, "CH_84": 15, "CH_98": 87,
 "CH_68": 72, "CH_70": 97, "CH_17": 62}, "time": 1491808854}
 {"data": {"CH_8": 49, "CH_48": 66, "CH_90": 88, "CH_53": 82, "CH_50": 94, "CH_74": 66,
@@ -22,7 +22,7 @@ Input Log Format
 
 Ambari Dashboard Hive View
 ![](https://user-images.githubusercontent.com/3071179/28797399-217585ee-767c-11e7-9217-99ec6f38d158.png)
-```
+```sql
 SELECT key, SUM(value) FROM word_count WHERE time BETWEEN '2017-04-10 16:19:00' AND
  '2017-04-10 16:20:00' GROUP BY key;
 ```
