@@ -21,11 +21,11 @@ Input Log Format
 ```
 
 Ambari Dashboard Hive View
-![ambari_hive_view]
+![ambari_hive_view.png]
 ```
 SELECT key, SUM(value) FROM word_count WHERE time BETWEEN '2017-04-10 16:19:00' AND
  '2017-04-10 16:20:00' GROUP BY key;
 ```
 
 Result
-![result_view]
+![result_view.png]
