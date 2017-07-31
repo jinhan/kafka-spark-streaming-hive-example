@@ -21,11 +21,11 @@ Input Log Format
 ```
 
 Ambari Dashboard Hive View
-![](https://github.com/jinhan/kafka-spark-streaming-hive-example/blob/master/ambari_hive_view.png)
+![](https://user-images.githubusercontent.com/3071179/28797399-217585ee-767c-11e7-9217-99ec6f38d158.png)
 ```
 SELECT key, SUM(value) FROM word_count WHERE time BETWEEN '2017-04-10 16:19:00' AND
  '2017-04-10 16:20:00' GROUP BY key;
 ```
 
 Result
-![](https://github.com/jinhan/kafka-spark-streaming-hive-example/blob/master/result_view.png)
+![](https://user-images.githubusercontent.com/3071179/28797400-21764c9a-767c-11e7-9eca-ca09fa5a4804.png)
